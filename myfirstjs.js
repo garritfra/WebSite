@@ -1,8 +1,10 @@
 var x = 100;
 var y = 100;
+var canvaslength = 512;
+var canvasheight = 512;
 
 function setup() {
-  createCanvas(512, 512);
+  createCanvas(canvaslength, canvasheight);
 }
 
 function draw() {
@@ -17,6 +19,22 @@ function draw() {
 
   if (keyIsDown(DOWN_ARROW))
     y+=5;
+
+  if (x < 0) {
+    x = canvaslength;
+  }
+
+  if (x > canvaslength) {
+    x = 0;
+  }
+
+  if (y < 0) {
+    y = canvasheight;
+  }
+
+  if (y > canvasheight) {
+    y = 0;
+  }
 
   clear();
   fill(255, 0, 0);
