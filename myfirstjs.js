@@ -1,7 +1,7 @@
 var x = 100;
 var y = 100;
-var canvaslength = 512;
-var canvasheight = 512;
+var canvaslength = window.innerWidth * 0.95;
+var canvasheight = window.innerHeight * 0.95;
 
 function setup() {
   createCanvas(canvaslength, canvasheight);
@@ -36,7 +36,7 @@ function draw() {
     y = 0;
   }
 
-  clear();
+  background(200);
   fill(255, 0, 0);
   ellipse(x, y, 50, 50);
 }
