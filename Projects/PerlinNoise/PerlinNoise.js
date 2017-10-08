@@ -5,7 +5,7 @@ var yoff = 100000;  //Y Offset
 var coff1 = 100;    //Color 1 Offset
 var coff2 = 1000;   //Color 2 Offset
 var coff3 = 10000;  //Color 3 Offset
-var soff = 10;      //Scale Offset
+var soff = 30;      //Scale Offset
 
 function setup() {
     createCanvas(w, h);
